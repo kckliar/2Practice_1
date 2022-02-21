@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+void slovar() {
+    using namespace std;
+
+    string word;
+    int count;
+
+
+    cout << "Введите слово, которое отвечает на вопросы (Нет кого или чего?): ";
+    cin >> word;
+    cout << endl;
+
+    cout << "Кол-во: ";
+    cin >> count;
+    cout << endl;
+
+    switch (count) {
+        case 1:
+            cout << count << " " + word + "о";
+            cout << endl;
+            break;
+        case 2:
+        case 3:
+        case 4:
+            cout << count << " " + word + "a";
+            cout << endl;
+            break;
+        default:
+            cout << count << " " + word;
+            cout << endl;
+    }
+
+
+
+}
+
