@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+
+void calc( ) {
+    using namespace std;
+
+    int num1;
+    int num2;
+    string operation;
+
+    cout << "Первое число: ";
+    cin >> num1;
+    cout << endl;
+
+    cout << "Второе число: ";
+    cin >> num2;
+    cout << endl;
+
+    cout << "Введите операцию( сложение, вычитание, деление или умножение(+ - / *)): ";
+    cin >> operation;
+    cout << endl;
+
+    if (operation == "+") {
+        cout << num1 + num2 << endl;
+    } else if (operation == "-") {
+        cout << num1 - num2 << endl;
+    } else if (operation == "*") {
+        cout << num1 * num2 << endl;
+    } else if (operation == "/") {
+        cout << num1 / num2 << endl;
+    }
+
+
+
+}
